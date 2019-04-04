@@ -91,6 +91,10 @@ function contains(item, list, cb) {
    return cb(false);
 }
 
+contains("Bats", items, function(testResult) {
+  console.log(testResult);
+});
+
 contains("Pencil", items, function(testResult) {
   console.log(testResult);
 });
@@ -101,7 +105,10 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  return cb(array)
 }
+
+
 
 
 
